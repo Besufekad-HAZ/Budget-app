@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Proxima Nova", Helvetica;
+  font-family: 'Proxima Nova', Helvetica, sans-serif;
 }
+
 :root {
   --primary-color: #3778c2;
   --secondary-color: #5fb523;
   --text-color: #434b54;
 }
+
 .splash-container {
   background-color: white;
   color: #fff;
@@ -18,11 +20,13 @@
   justify-content: center;
   align-items: center;
 }
+
 .title {
     color: var(--text-color);
   font-size: 3rem;
   margin-bottom: 4rem;
 }
+
 .buttons {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,7 @@
   width: 100%;
   padding: 1em;
 }
+
 .button {
     width: 100%;
     display: flex;
@@ -51,14 +56,16 @@ button, .buttons a {
   width: 10%;
 }
 
-button:hover, buttons a:hover {
+button:hover, .buttons a:hover {
   background-color: #434b54;
   cursor: pointer;
 }
+
 .signup {
     background-color: white;
     color: var(--text-color);
 }
+
 .signup:hover {
     background-color: white;
     color: var(--secondary-color);
