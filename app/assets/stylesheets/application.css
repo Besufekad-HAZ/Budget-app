@@ -4,13 +4,11 @@
   box-sizing: border-box;
   font-family: "Proxima Nova", Helvetica;
 }
-
 :root {
   --primary-color: #3778c2;
   --secondary-color: #5fb523;
   --text-color: #434b54;
 }
-
 .splash-container {
   background-color: white;
   color: #fff;
@@ -20,13 +18,11 @@
   justify-content: center;
   align-items: center;
 }
-
 .title {
     color: var(--text-color);
   font-size: 3rem;
   margin-bottom: 4rem;
 }
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -35,7 +31,6 @@
   width: 100%;
   padding: 1em;
 }
-
 .button {
     width: 100%;
     display: flex;
@@ -43,7 +38,7 @@
     align-items: center;
 }
 
-button, a {
+button, .buttons a {
   background-color: #5fb523;
   color: #fff;
   font-size: 1.5rem;
@@ -56,17 +51,43 @@ button, a {
   width: 10%;
 }
 
-button:hover, a:hover {
+button:hover, buttons a:hover {
   background-color: #434b54;
   cursor: pointer;
 }
-
 .signup {
     background-color: white;
     color: var(--text-color);
 }
-
 .signup:hover {
     background-color: white;
     color: var(--secondary-color);
+}
+
+.credential-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.field input[type="email"],
+.field input[type="password"] {
+  border: 1px solid var(--secondary-color);
+  color: var(--text-color);
+  padding: 5px;
+  background-color: #fff;
+}
+
+.field label {
+  display: none;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.remember-me-label {
+  color: var(--text-color);
 }
