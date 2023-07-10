@@ -1,8 +1,9 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Proxima Nova', Helvetica, sans-serif;
+  font-family: proxima-nova, Helvetica, sans-serif;
 }
 
 :root {
@@ -11,9 +12,9 @@
   --text-color: #434b54;
 }
 
+/* Splash Screen */
 .splash-container {
   background-color: white;
-  color: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,7 +23,7 @@
 }
 
 .title {
-    color: var(--text-color);
+  color: var(--text-color);
   font-size: 3rem;
   margin-bottom: 4rem;
 }
@@ -37,14 +38,15 @@
 }
 
 .button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-button, .buttons a {
-  background-color: #5fb523;
+button,
+.buttons a {
+  background-color: var(--secondary-color);
   color: #fff;
   font-size: 1.5rem;
   font-weight: bold;
@@ -56,35 +58,65 @@ button, .buttons a {
   width: 10%;
 }
 
-button:hover, .buttons a:hover {
-  background-color: #434b54;
+button:hover,
+.buttons a:hover {
+  background-color: var(--text-color);
   cursor: pointer;
 }
 
 .signup {
-    background-color: white;
-    color: var(--text-color);
+  background-color: white;
+  color: var(--text-color);
 }
 
 .signup:hover {
-    background-color: white;
-    color: var(--secondary-color);
+  background-color: white;
+  color: var(--secondary-color);
 }
 
+/* Credential Form */
 .credential-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  background-color: var(--primary-color);
+  height: 100vh;
+}
+
+.credential-form h2 {
+  color: white;
+  margin-bottom: 2em;
+}
+
+.container-form {
+  background-color: white;
+  padding: 2em 4em;
+  border-radius: 8px;
+  height: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .field input[type="email"],
 .field input[type="password"] {
-  border: 1px solid var(--secondary-color);
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0.5em 1em;
+  border-radius: 0;
   color: var(--text-color);
-  padding: 5px;
   background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.field input[type="email"]:focus,
+.field input[type="password"]:focus {
+  outline: none;
+  border-bottom: 2px solid var(--secondary-color);
+  font-size: 15px;
 }
 
 .field label {
