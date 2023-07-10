@@ -1,2 +1,8 @@
-<h1>Payments#show</h1>
-<p>Find me in app/views/payments/show.html.erb</p>
+<%= render @payment %>
+
+<div>
+  <%= link_to "Edit", edit_payment_path(@payment) %> |
+  <%= link_to "Back", payments_path %>
+
+  <%= button_to "Destroy", @payment, method: :delete %>
+</div>
