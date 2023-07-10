@@ -6,6 +6,6 @@ class Category < ApplicationRecord
   validates :icon, presence: true
 
   def total_transaction_amount
-        payments.sum(:amount)
+    payments.sum(:amount)
   end
 end
