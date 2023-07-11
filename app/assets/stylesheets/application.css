@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
+  font-family: 'lato', sans-serif;
 }
 
 p,
@@ -12,7 +12,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: Lobster, cursive;
+  font-family: 'Merienda', sans-serif;
+  font-weight: 600;
 }
 
 :root {
@@ -22,8 +23,8 @@ h4 {
 }
 
 .splash-container {
-  background-color: white;
-  color: #fff;
+  background-color: rgb(189, 255, 174);
+  color: #282828;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -48,7 +49,7 @@ h4 {
 .buttons {
   display: flex;
   flex-direction: column;
-  margin-inline: auto;
+  margin: 0 auto;
   gap: 5px;
   width: 100%;
   padding: 1em;
@@ -59,24 +60,25 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-button,
-.buttons a {
-  background-color: #5fb523;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s ease-in-out;
-}
+  /* Use a single selector for all buttons */
+  &,
+  & a {
+    background-color: #5fb523;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out;
+  }
 
-button:hover {
-  background-color: #434b54;
-  cursor: pointer;
+  /* Add a hover state to all buttons */
+  &:hover {
+    background-color: #434b54;
+  }
 }
 
 .buttons .signin {
@@ -124,9 +126,31 @@ button:hover {
   justify-content: center;
   align-items: center;
   box-shadow: 6px 4px 15px rgb(0 0 0 / 20%);
+
+  /* Border glow animation */
+  border: 2px solid var(--secondary-color);
+  box-shadow: 0 0 60px 30px var(--secondary-color),
+    0 0 100px 60px var(--secondary-color-dark),
+    0 0 140px 90px var(--secondary-color-light);
+  animation: glow 1s infinite linear;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 40px 20px var(--secondary-color);
+  }
+
+  50% {
+    box-shadow: 0 0 100px 70px var(--secondary-color-light);
+  }
+
+  100% {
+    box-shadow: 0 0 20px 10px var(--secondary-color);
+  }
 }
 
 .container-form .actions input[type="submit"] {
+  cursor: pointer;
   background-color: var(--secondary-color);
   color: white;
   font-size: 1em;

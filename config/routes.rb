@@ -10,21 +10,4 @@ Rails.application.routes.draw do
     get '/logout', to: 'devise/sessions#destroy'
   end
   root to: 'user#index'
-
-  # get 'payments/index'
-  # get 'payments/show'
-  # get 'payments/new'
-  # get 'payments/create'
-  # get 'payments/edit'
-  # get 'payments/update'
-  # get 'payments/destroy'
-  # get 'categories/index'
-  # get 'categories/show'
-  # get 'categories/new'
-  # get 'categories/create'
-  # get 'categories/edit'
-  # get 'categories/update'
-  # get 'categories/destroy'
-  # get 'user/index'
-  # devise_for :users
 end
