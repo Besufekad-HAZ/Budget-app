@@ -42,9 +42,10 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Register and log in, so that the data is private to them.
+- Users can register and log in to the app to access their private data.
 - Introduce new transactions associated with a category.
 - See the money spent on each category.
+- Security: The app validates user input to prevent security vulnerabilities and uses Devise for authentication.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
