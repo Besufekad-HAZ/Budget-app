@@ -230,7 +230,7 @@ button:hover,
   left: 0;
   width: 100%;
   background-color: var(--secondary-color);
-  padding: 1em 1em;
+  padding: 1em;
 }
 
 .add-category-link:hover {
@@ -242,7 +242,7 @@ button:hover,
   text-decoration: none;
 }
 
-.categories-container .no-data {
+.no-data {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,6 +250,7 @@ button:hover,
   margin-top: 20px;
   font-style: italic;
 }
+
 .form-container {
   display: flex;
   flex-direction: column;
@@ -257,10 +258,12 @@ button:hover,
   align-items: center;
   margin-top: 20px;
 }
+
 .form-container input[type="text"] {
   padding: 0.5em 1em;
   margin-bottom: 10px;
 }
+
 .form-container .submit-button {
   width: 175px;
   background-color: var(--secondary-color);
@@ -270,11 +273,13 @@ button:hover,
   font-size: 1.1em;
   border-radius: 5px;
 }
+
 .form-container .submit-button:hover {
   background-color: var(--primary-color);
   cursor: pointer;
   transition: 0.2s ease;
 }
+
 .category {
   display: flex;
   flex-direction: row;
@@ -285,7 +290,7 @@ button:hover,
   width: 90%;
   border: 1px solid var(--text-color);
   margin-inline: auto;
-  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
 }
 
 .category-icon {
@@ -295,4 +300,28 @@ button:hover,
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.categories-container a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.2em;
+}
+
+.categories-container a:hover {
+  color: var(--secondary-color);
+  transition: 0.2s ease;
+}
+
+.single-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 1em 2em;
+  width: 90%;
+  border: 1px solid var(--text-color);
+  margin-inline: auto;
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
 }
