@@ -109,14 +109,14 @@ button:hover,
 
 .container-form {
   background-color: white;
-  padding: 2em 2em;
+  padding: 2em;
   border-radius: 8px;
   height: 15em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 6px 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 6px 4px 15px rgb(0 0 0 / 20%);
 }
 
 .container-form .actions input[type="submit"] {
@@ -191,7 +191,7 @@ button:hover,
   color: white;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 1em;
+  padding: 1em;
   background-color: var(--primary-color);
 }
 
@@ -213,10 +213,12 @@ button:hover,
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--secondary-color);
-  padding: 1em 1em;
   color: white;
   gap: 10px;
+  border: 1px solid white;
+  width: 70%;
+  margin-inline: auto;
+  padding: 1em 0;
 }
 
 .add-category-link {
@@ -227,10 +229,17 @@ button:hover,
   bottom: 0;
   left: 0;
   width: 100%;
+  background-color: var(--secondary-color);
+  padding: 1em 1em;
 }
 
 .add-category-link:hover {
   opacity: 0.7;
+}
+
+.add-category a {
+  color: white;
+  text-decoration: none;
 }
 
 .categories-container .no-data {
@@ -241,7 +250,6 @@ button:hover,
   margin-top: 20px;
   font-style: italic;
 }
-
 .form-container {
   display: flex;
   flex-direction: column;
@@ -249,12 +257,10 @@ button:hover,
   align-items: center;
   margin-top: 20px;
 }
-
 .form-container input[type="text"] {
   padding: 0.5em 1em;
   margin-bottom: 10px;
 }
-
 .form-container .submit-button {
   width: 175px;
   background-color: var(--secondary-color);
@@ -263,4 +269,30 @@ button:hover,
   border: none;
   font-size: 1.1em;
   border-radius: 5px;
+}
+.form-container .submit-button:hover {
+  background-color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 1em 2em;
+  width: 90%;
+  border: 1px solid var(--text-color);
+  margin-inline: auto;
+  border-radius: 8px;
+}
+
+.category-icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
