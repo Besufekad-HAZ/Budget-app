@@ -1,12 +1,12 @@
 <a name="readme-top"></a>
-<h1 align='center'> Rails Blog</h1>
+<h1 align='center'> Cash-Buddy</h1>
 
 ![Ruby on rails](image.png)
 
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [ Rails Blog ](#-My-Blog-App-)
+- [ Cash Buddy ](#-cash-buddy)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -25,8 +25,8 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# Rails Blog <a name="about-project"></a>
-> Rails Blog app is a blog website built using Ruby on Rails. Readers can leave comments and like posts, and administrators can manage content. The site includes user authentication and a search feature.
+# Cash-Buddy <a name="about-project"></a>
+> The Cash-Buddy project is a mobile web application that allows users to manage their budget by keeping track of their transactions and associated categories. The app requires users to register and log in to ensure that their data is private. Users can add new transactions associated with categories and view the money spent on each category. The app has several pages, including the Splash Screen, Signup and Login Pages, Home Page (Categories Page), Transactions Page, Add a New Category Page, and Add a New Transaction Page.
 
 ## 🛠 Built With <a name="built-with"></a>
 ### Tech Stack <a name="tech-stack"></a>
@@ -42,9 +42,9 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Create and manage blog posts
-- See previously posted blogs
-- Like or comment on a blog post
+- Register and log in, so that the data is private to them.
+- Introduce new transactions associated with a category.
+- See the money spent on each category.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -71,7 +71,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd your-folder
-  git clone git@github.com:Besufekad-HAZ/Blog-App.git (SSH)
+  git clone git@github.com:Besufekad-HAZ/Budget-app.git (SSH)
 ```
 
 ### Install
@@ -114,12 +114,6 @@ To deploy the app you can use
 - Twitter: [@BesufekadAlemu7](https://twitter.com/BesufekadAlemu7)
 - LinkedIn: [@besura](www.linkedin.com/in/besura)
 
-👤 **Kelvin kaviku**
-
-- GitHub: [@brainskev](https://github.com/brainskev/)
-- Twitter: [@kelvin_ngotho](https://twitter.com/kevin_ngotho?s=09/)
-- LinkedIn: [kelvin](https://www.linkedin.com/in/kelvinkaviku/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -127,7 +121,8 @@ To deploy the app you can use
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Create API endpoints**
-- [ ] **Implement authentication**
+- [ ] **Integration with banking apps**
+- [ ] **Bill reminders**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +132,7 @@ To deploy the app you can use
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Besufekad-HAZ/Blog-App/issues).
+Feel free to check the [issues page](https://github.com/Besufekad-HAZ/Budget-app/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -153,7 +148,10 @@ If you like this project, please leave a ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank microverse for serving this opprtunity.
+- I'd like to thank the [Microverse](https://www.microverse.org/) team for providing us with the opportunity to work on this amazing budget-app rails app.
+
+- The design for this project was inspired by the work of [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), whose original design idea can be found on Behance. I would like to thank Gregoire for sharing his work under a Creative Commons license, which allowed us to use it in our project.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,6 +159,6 @@ I would like to thank microverse for serving this opprtunity.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Besufekad-HAZ/Blog-App/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/Besufekad-HAZ/Budget-app/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
