@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   before_action :authenticate_user!
-  before_action :set_category, only: [:show, :edit, :update, :destroy]
+  before_action :set_category, only: %i[show edit update destroy]
 
   def index
     @categories = current_user.categories.includes(:payments).order(updated_at: :desc)
@@ -17,8 +17,7 @@ class CategoriesController < ApplicationController
     @category = current_user.categories.new
   end
 
-  def edit
-  end
+  def edit; end
 
   def create
     @category = current_user.categories.new(category_params)
@@ -54,7 +53,6 @@ class CategoriesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
 
   private
 
