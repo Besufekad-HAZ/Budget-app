@@ -129,7 +129,8 @@ h4 {
 
   /* Border glow animation */
   border: 2px solid var(--secondary-color);
-  box-shadow: 0 0 60px 30px var(--secondary-color),
+  box-shadow:
+    0 0 60px 30px var(--secondary-color),
     0 0 100px 60px var(--secondary-color-dark),
     0 0 140px 90px var(--secondary-color-light);
   animation: glow 1s infinite linear;
@@ -289,7 +290,7 @@ h4 {
   text-decoration: none;
 }
 
-.add-category:hover  a {
+.add-category:hover a {
   color: var(--secondary-color);
   background-color: white;
   text-decoration: none;
@@ -351,7 +352,8 @@ h4 {
   width: 90%;
   margin-inline: auto;
   border: 1px solid var(--secondary-color);
-  box-shadow: 0 0 30px 15px var(--secondary-color),
+  box-shadow:
+    0 0 30px 15px var(--secondary-color),
     0 0 50px 30px var(--secondary-color-dark),
     0 0 70px 45px var(--secondary-color-light);
   animation: glow 2s infinite linear;
@@ -437,13 +439,13 @@ h4 {
   box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
 }
 
-
 @media (width <= 480px) {
   .container-form {
     width: 60%;
   }
 
-.cname, .ctotal {
+.cname,
+.ctotal {
   display: flex;
   justify-content: space-between;
   align-items: center;
