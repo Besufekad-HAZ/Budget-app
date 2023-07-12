@@ -4,7 +4,7 @@ RSpec.describe Category, type: :model do
   let(:user) { User.create(name: 'Bese', email: 'Besurye@gmail.com', password: 'HelloRails123') }
 
   before(:each) do
-    @category = Category.new(name: 'Laptop', icon: 'icon.jpg', user: user)
+    @category = Category.new(name: 'Laptop', icon: 'icon.jpg', user:)
   end
 
   context 'Validation tests' do
