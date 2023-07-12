@@ -351,6 +351,7 @@ h4 {
   padding: 1em 2em;
   width: 90%;
   margin-inline: auto;
+  border-radius: 5px;
   border: 1px solid var(--secondary-color);
   box-shadow:
     0 0 30px 15px var(--secondary-color),
@@ -446,10 +447,10 @@ h4 {
 
  .cname,
  .ctotal {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   width: 100%;
-   font-size: 3.2vw;
- }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 3.2vw;
+  }
 }
