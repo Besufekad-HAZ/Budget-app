@@ -34,6 +34,8 @@ gem 'cancancan'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 
+gem 'letter_opener'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
