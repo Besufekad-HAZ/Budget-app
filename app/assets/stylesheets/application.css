@@ -444,12 +444,12 @@ h4 {
     width: 60%;
   }
 
-.cname,
-.ctotal {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  font-size: 3.2vw;
-}
+ .cname,
+ .ctotal {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   font-size: 3.2vw;
+ }
 }
