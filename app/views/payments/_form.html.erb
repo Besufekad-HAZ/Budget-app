@@ -1,13 +1,21 @@
 <%= form_with(model: payment, url: category_payments_path) do |form| %>
-    <div class="header">
+  <div class="header">
     <a href="<%= category_payments_path %>">
-        <i class="fa-solid fa-arrow-left"></i>
+      <i class="fa-solid fa-arrow-left"></i>
     </a>
     <p>New Transaction</p>
-        <%= form.submit "Create", class: "reg-next" %>
-    </div>
-    <div class="form-container">
-        <%= form.text_field :name, placeholder: "Name" %>
-        <%= form.text_field :amount, placeholder: "Amount" %>
-    </div>
+    <%= form.submit "Create", class: "reg-next" %>
+  </div>
+  <div class="form-container">
+    <%= form.text_field :name, placeholder: "Name", pattern: "[A-Za-z]+" %>
+    <% if payment.errors.has_key?(:name) %>
+      <p class="error-message"><%= payment.errors[:name].first %></p>
+    <% end %>
+    <%= form.text_field :amount, placeholder: "Amount", pattern: "[0-9]+" %>
+    <% if payment.errors.has_key?(:amount) %>
+      <p class="error-message"><%= payment.errors[:amount].first %></p>
+    <% end %>
+  </div>
 <% end %>
+
+
