@@ -29,7 +29,7 @@
 <!-- PROJECT DESCRIPTION -->
 
 # Cash-Buddy <a name="about-project"></a>
-> The Cash-Buddy project is a mobile web application that allows users to manage their budget by keeping track of their transactions and associated categories. The app requires users to register and log in to ensure that their data is private. Users can add new transactions associated with categories and view the money spent on each category. The app has several pages, including the Splash Screen, Signup and Login Pages, Home Page (Categories Page), Transactions Page, Add a New Category Page, and Add a New Transaction Page.
+> The Cash-Buddy project is a mobile web application that allows users to manage their budgets by keeping track of their transactions and associated categories. The app requires users to register and log in to ensure that their data is private. Users can add new transactions associated with categories and view the money spent on each category. The app has several pages, including the Splash Screen, Signup and Login Pages, Home Page (Categories Page), Transactions Page, Add a New Category Page, and Add a New Transaction Page.
 
 
 ## 🛠 Built With <a name="built-with">Ruby on rails and Posgresql</a>
@@ -56,7 +56,11 @@
 
 ## 🚀 Screenshot <a name="screenshot"></a>
 
-![image](https://user-images.githubusercontent.com/23375153/217803810-3a3d8691-267c-4303-a68a-76139ddc6d2f.png)
+<div style="display: flex; width: auto; justify-content: center; margin: 0 auto;">
+  <img src="https://github.com/Besufekad-HAZ/Budget-app/assets/23375153/f32dd320-d42e-43d6-a832-37e328910b01" alt="Home Page" style="width: 50%;">
+  <br />
+  <img src="https://github.com/Besufekad-HAZ/Budget-app/assets/23375153/3e10cc84-0581-4b3d-bf36-5e132090bb42" alt="Category Page" style="width: 50%;">
+</div>
 
 ## 💻 Loom Presentation Video <a name="loom-video"></a>
 
