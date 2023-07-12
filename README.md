@@ -29,8 +29,10 @@
 <!-- PROJECT DESCRIPTION -->
 
 # Cash-Buddy <a name="about-project"></a>
-> The Cash-Buddy project is a mobile web application that allows users to manage their budget by keeping track of their transactions and associated categories. The app requires users to register and log in to ensure that their data is private. Users can add new transactions associated with categories and view the money spent on each category. The app has several pages, including the Splash Screen, Signup and Login Pages, Home Page (Categories Page), Transactions Page, Add a New Category Page, and Add a New Transaction Page.
+> The Cash-Buddy project is a mobile web application that allows users to manage their budgets by keeping track of their transactions and associated categories. The app requires users to register and log in to ensure that their data is private. Users can add new transactions associated with categories and view the money spent on each category. The app has several pages, including the Splash Screen, Signup and Login Pages, Home Page (Categories Page), Transactions Page, Add a New Category Page, and Add a New Transaction Page.
 
+![Home Page](https://github.com/Besufekad-HAZ/Budget-app/assets/23375153/f32dd320-d42e-43d6-a832-37e328910b01)
+![Category Page](https://github.com/Besufekad-HAZ/Budget-app/assets/23375153/3e10cc84-0581-4b3d-bf36-5e132090bb42)
 
 ## 🛠 Built With <a name="built-with">Ruby on rails and Posgresql</a>
 ### Tech Stack <a name="tech-stack"></a>
