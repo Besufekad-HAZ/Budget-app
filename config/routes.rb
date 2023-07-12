@@ -10,5 +10,4 @@ Rails.application.routes.draw do
     get '/logout', to: 'devise/sessions#destroy'
   end
   root to: 'user#index'
-
 end
