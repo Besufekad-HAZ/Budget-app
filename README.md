@@ -31,6 +31,7 @@
 # Cash-Buddy <a name="about-project"></a>
 > The Cash-Buddy project is a mobile web application that allows users to manage their budget by keeping track of their transactions and associated categories. The app requires users to register and log in to ensure that their data is private. Users can add new transactions associated with categories and view the money spent on each category. The app has several pages, including the Splash Screen, Signup and Login Pages, Home Page (Categories Page), Transactions Page, Add a New Category Page, and Add a New Transaction Page.
 
+
 ## 🛠 Built With <a name="built-with">Ruby on rails and Posgresql</a>
 ### Tech Stack <a name="tech-stack"></a>
 
@@ -163,7 +164,8 @@ If you like this project, please leave a ⭐️
 
 - I'd like to thank the [Microverse](https://www.microverse.org/) team for providing us with the opportunity to work on this amazing budget-app rails app.
 
-- The design for this project was inspired by the work of [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), whose original design idea can be found on Behance. I would like to thank Gregoire for sharing his work under a Creative Commons license, which allowed us to use it in our project.
+- The design for this project was inspired by the work of [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), whose [Original Design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) can be found on Behance. I would like to thank Gregoire for sharing his work under a Creative Commons license, which allowed us to use it in our project.
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
