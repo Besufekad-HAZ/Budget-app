@@ -23,33 +23,33 @@ h4 {
 }
 
 .splash-container {
-  background-color: rgb(189 255 174);
-  color: #282828;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(189 255 174);
+  color: #282828;
+  height: 100vh;
 }
 
 .title {
+  margin-bottom: 4rem;
   color: var(--text-color);
   font-size: 3rem;
-  margin-bottom: 4rem;
 }
 
 .sub-title {
-  color: var(--text-color);
-  font-size: 1rem;
   font-style: italic;
   margin-bottom: 2rem;
   margin-top: -4rem;
+  color: var(--text-color);
+  font-size: 1rem;
 }
 
 .buttons {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   gap: 5px;
   width: 100%;
   padding: 1em;
@@ -57,9 +57,9 @@ h4 {
 
 .button {
   width: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: flex;
 
   /* Use a single selector for all buttons */
   &,
@@ -87,44 +87,45 @@ h4 {
 }
 
 .buttons .signin:hover {
-  background-color: var(--secondary-color);
   color: white;
+  background-color: var(--secondary-color);
 }
 
 .buttons .signup {
-  background-color: white;
   color: var(--text-color);
+  background-color: white;
 }
 
 .buttons .signup:hover {
-  background-color: white;
-  color: var(--secondary-color);
+  color: lightgreen;
+  background-color: rgb(0, 0, 0);
+  margin-top: 1%;
 }
 
 .credential-form {
-  display: flex;
+  background-color: var(--primary-color);
+  font-size: 1.2em;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.2em;
-  background-color: var(--primary-color);
   height: 100vh;
+  display: flex;
 }
 
 .credential-form h2 {
-  color: white;
   margin-bottom: 2em;
+  color: white;
 }
 
 .container-form {
-  background-color: rgb(255 255 255 / 90%);
-  border-radius: 0.5rem;
   width: 50%;
   padding: 3% 6%;
   height: 15em;
+  background-color: rgb(255 255 255 / 90%);
   display: flex;
   flex-direction: column;
   font-family: lato, sans-serif;
+  border-radius: 0.5rem;
 
   /* Border glow animation */
   border: 2px solid var(--secondary-color);
@@ -149,21 +150,21 @@ h4 {
 }
 
 .container-form .actions input[type="submit"] {
-  cursor: pointer;
   background-color: var(--secondary-color);
   color: white;
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
   font-size: 1em;
   font-weight: bold;
   padding: 0.3em 0.8em;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.2s ease-in-out;
-  width: 100%;
 }
 
 .form-container input[type="text"] {
+  margin-bottom: 0.625rem;
   padding: 0.5em 1em;
-  margin-bottom: 10px;
 }
 
 .container-form .actions input[type="submit"]:hover {
@@ -174,14 +175,14 @@ h4 {
 .field input[type="email"],
 .field input[type="text"],
 .field input[type="password"] {
-  border: none;
-  border-bottom: 2px solid var(--primary-color);
-  padding: 0.5em 1em;
-  border-radius: 0;
   color: var(--text-color);
   background-color: #fff;
   margin-bottom: 10px;
   width: 100%;
+  border: none;
+  border-bottom: 2px solid var(--primary-color);
+  padding: 0.5em 1em;
+  border-radius: 0;
 }
 
 .field input[type="email"]:focus,
@@ -194,17 +195,6 @@ h4 {
 
 .category-header a {
   color: white;
-}
-
-.add-category a {
-  color: white;
-  text-decoration: none;
-}
-
-.add-category:hover {
-  color: var(--secondary-color);
-  background-color: white;
-  text-decoration: none;
 }
 
 .categories-container a {
@@ -272,6 +262,11 @@ h4 {
   padding: 1em 0;
 }
 
+.add-category a {
+  text-decoration: none;
+  color: white;
+}
+
 .add-category-link {
   color: white;
   text-decoration: none;
@@ -288,8 +283,16 @@ h4 {
   opacity: 0.7;
 }
 
-.add-category :hover {
+.add-category:hover {
   color: var(--secondary-color);
+  background-color: white;
+  text-decoration: none;
+}
+
+.add-category:hover  a {
+  color: var(--secondary-color);
+  background-color: white;
+  text-decoration: none;
 }
 
 .button-name {
@@ -300,12 +303,12 @@ h4 {
 }
 
 .no-data {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   margin-top: 20px;
   font-style: italic;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-container {
@@ -313,7 +316,7 @@ h4 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.2rem;
 }
 
 .form-container .submit-button {
@@ -347,7 +350,7 @@ h4 {
   padding: 1em 2em;
   width: 90%;
   margin-inline: auto;
-  border: 2px solid var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   box-shadow: 0 0 30px 15px var(--secondary-color),
     0 0 50px 30px var(--secondary-color-dark),
     0 0 70px 45px var(--secondary-color-light);
@@ -356,15 +359,15 @@ h4 {
 
 @keyframes glow {
   0% {
-    box-shadow: 0 0 5px 2px var(--secondary-color);
+    box-shadow: 0 0 8px 4px var(--secondary-color);
   }
 
   50% {
-    box-shadow: 0 0 20px 10px var(--secondary-color-light);
+    box-shadow: 0 0 25px 15px var(--secondary-color-light);
   }
 
   100% {
-    box-shadow: 0 0 5px 2px var(--secondary-color);
+    box-shadow: 0 0 7px 5px var(--secondary-color);
   }
 }
 
@@ -389,11 +392,11 @@ h4 {
 }
 
 .shiny-delete-icon {
-  background-color: transparent;
-  border: none;
   color: var(--secondary-color);
   cursor: pointer;
   font-size: 1.5rem;
+  background-color: transparent;
+  border: none;
   transition: color 0.3s;
 
   /* Remove default button styles */
@@ -401,8 +404,22 @@ h4 {
   margin: 0;
 }
 
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .shiny-delete-icon:hover {
-  color: var(--secondary-color-light);
+  animation: blink 1s infinite;
+  color: red;
+  font-size: 2rem;
 }
 
 .single-payment {
@@ -410,11 +427,11 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 1.25rem;
+  margin-inline: auto;
   padding: 1em 2em;
   width: 90%;
   border: 1px solid var(--text-color);
-  margin-inline: auto;
   box-shadow: 2px 2px 8px rgb(0 0 0 / 20%);
 }
 
