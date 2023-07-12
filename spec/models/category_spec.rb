@@ -1,25 +1,26 @@
 require 'rails_helper'
 
 RSpec.describe Category, type: :model do
-  context 'validation tests' do
-    first_user = User.create(name: 'Aman', email: 'amexworku2014@gmail.com', password: 'Amanspassword')
-    before(:each) do
-      @first_category = Category.create(name: 'Groceries', icon: 'icon.jpg', user_id: first_user.id)
+  let(:user) { User.create(name: 'Bese', email: 'Besurye@gmail.com', password: 'HelloRails123') }
+
+  before(:each) do
+    @category = Category.new(name: 'Laptop', icon: 'icon.jpg', user: user)
+  end
+
+  context 'Validation tests' do
+    it 'Is invalid without a name' do
+      @category.name = nil
+      expect(@category).to_not be_valid
     end
 
-    it 'is invalid without a name' do
-      @first_category.name = nil
-      expect(@first_category).to_not be_valid
+    it 'Is invalid without an icon' do
+      @category.icon = nil
+      expect(@category).to_not be_valid
     end
 
-    it 'is invalid without an icon' do
-      @first_category.icon = nil
-      expect(@first_category).to_not be_valid
-    end
-
-    it 'must have a user_id' do
-      @first_category.user_id = nil
-      expect(@first_category).to_not be_valid
+    it 'Must have a user' do
+      @category.user = nil
+      expect(@category).to_not be_valid
     end
   end
 end
