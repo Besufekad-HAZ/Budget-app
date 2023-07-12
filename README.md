@@ -170,8 +170,6 @@ If you like this project, please leave a ⭐️
 
 - The design for this project was inspired by the work of [Gregoire Vella on Behance](https://www.behance.net/gregoirevella), whose [Original Design](https://www.behance.net/gallery/19759151/Snapscan-iOs-design-and-branding?tracking_source=) can be found on Behance. I would like to thank Gregoire for sharing his work under a Creative Commons license, which allowed us to use it in our project.
 
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 📝 License <a name="license"></a>
