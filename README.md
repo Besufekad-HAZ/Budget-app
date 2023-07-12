@@ -174,8 +174,6 @@ If you like this project, please leave a ⭐️
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- FAQ (optional) -->
-
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](https://github.com/Besufekad-HAZ/Budget-app/blob/dev/LICENSE) licensed.
