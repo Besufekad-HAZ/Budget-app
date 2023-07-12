@@ -1,18 +1,18 @@
 databases:
-  - name: cash-buddy
-    databaseName: cash_buddy
-    user: cash_buddy_user
+  - name: cash_buddy
+    databaseName: cash_buddy_x7vv
+    user: cash_buddy_x7vv_user
 
 services:
   - type: web
-    name: cash-buddy
+    name: cash_buddy
     runtime: ruby
     buildCommand: "./bin/render-build.sh"
     startCommand: "bundle exec puma -C config/puma.rb"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: cash-buddy
+          name: cash_buddy_x7vv
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
