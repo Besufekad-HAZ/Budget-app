@@ -49,6 +49,8 @@ class CategoriesController < ApplicationController
   end
 
   def destroy
+    @category = Category.find(params[:id])
+    @category.payments.destroy_all
     @category.destroy
 
     respond_to do |format|
@@ -56,6 +58,8 @@ class CategoriesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
 
   private
 
