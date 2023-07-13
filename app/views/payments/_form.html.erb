@@ -7,15 +7,13 @@
     <%= form.submit "Create", class: "reg-next" %>
   </div>
   <div class="form-container">
-    <%= form.text_field :name, placeholder: "Name", pattern: "[A-Za-z]+" %>
+    <%= form.text_field :name, placeholder: "Name", pattern: ".*", required: true %>
     <% if payment.errors.has_key?(:name) %>
       <p class="error-message"><%= payment.errors[:name].first %></p>
     <% end %>
-    <%= form.text_field :amount, placeholder: "Amount", pattern: "[0-9]+" %>
+    <%= form.text_field :amount, placeholder: "Amount", pattern: "^\\d+(\\.\\d+)?$" %>
     <% if payment.errors.has_key?(:amount) %>
       <p class="error-message"><%= payment.errors[:amount].first %></p>
     <% end %>
   </div>
 <% end %>
-
-
