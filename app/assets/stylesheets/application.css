@@ -120,7 +120,7 @@ h4 {
 .container-form {
   width: 50%;
   padding: 3% 6%;
-  height: 15em;
+  height: 35vh;
   background-color: rgb(255 255 255 / 90%);
   display: flex;
   flex-direction: column;

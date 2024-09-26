@@ -10,7 +10,7 @@ gem 'rails', '~> 7.0.6'
 gem 'sprockets-rails'
 
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 1.1'
+gem "pg", "~> 1.1"
 
 # Use the Puma web server [https://github.com/puma/puma]
 gem 'puma', '~> 5.0'
@@ -35,6 +35,8 @@ gem 'cancancan'
 gem 'rubocop', '>= 1.0', '< 2.0'
 
 gem 'letter_opener'
+
+gem 'dotenv-rails', groups: [:development, :test]
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
