@@ -6,14 +6,16 @@
     <p>New Transaction</p>
     <%= form.submit "Create", class: "reg-next" %>
   </div>
-  <div class="form-container">
-    <%= form.text_field :name, placeholder: "Name", pattern: ".*", required: true %>
-    <% if payment.errors.has_key?(:name) %>
-      <p class="error-message"><%= payment.errors[:name].first %></p>
-    <% end %>
-    <%= form.text_field :amount, placeholder: "Amount", pattern: "^\\d+(\\.\\d+)?$" %>
-    <% if payment.errors.has_key?(:amount) %>
-      <p class="error-message"><%= payment.errors[:amount].first %></p>
-    <% end %>
+  <div class="form-wrapper">
+    <div class="form-container">
+      <%= form.text_field :name, placeholder: "Name", pattern: ".*", required: true %>
+      <% if payment.errors.has_key?(:name) %>
+        <p class="error-message"><%= payment.errors[:name].first %></p>
+      <% end %>
+      <%= form.text_field :amount, placeholder: "Amount", pattern: "^\\d+(\\.\\d+)?$" %>
+      <% if payment.errors.has_key?(:amount) %>
+        <p class="error-message"><%= payment.errors[:amount].first %></p>
+      <% end %>
+    </div>
   </div>
 <% end %>

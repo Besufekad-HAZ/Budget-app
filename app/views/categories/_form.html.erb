@@ -9,10 +9,12 @@
 </div>
 <%= form_with(model: @category) do |form| %>
   <%= form.hidden_field :previous_url, value: request.referer %>
-  <div class="form-container">
-    <%= form.text_field :name, placeholder: "Name" %>
-    <%= form.text_field :icon, placeholder: "Icon Link" %>
-    <%= form.submit "Create", class: "submit-button" %>
+  <div class="form-wrapper">
+    <div class="form-container">
+      <%= form.text_field :name, placeholder: "Name" %>
+      <%= form.text_field :icon, placeholder: "Icon Link" %>
+      <%= form.submit "Create", class: "submit-button" %>
+    </div>
   </div>
 <% end %>
 
